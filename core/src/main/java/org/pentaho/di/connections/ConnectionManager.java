@@ -105,6 +105,10 @@ public class ConnectionManager {
     connectionProviders.putIfAbsent( key, connectionProvider );
   }
 
+  public void removeConnectionProvider( String key ) {
+    connectionProviders.remove( key );
+  }
+
   /**
    * Get a connection provider from the key
    *
